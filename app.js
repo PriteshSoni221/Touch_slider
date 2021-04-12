@@ -96,6 +96,7 @@ function animation() {
 
 function setSliderPosition() {
   slider.style.transform = `translateX(${currentTranslate}px)`;
+  slider.style.transition = "transform 0.3s ease-out";
 }
 
 function setPositionByIndex() {
@@ -134,13 +135,25 @@ function infiniteSlide() {
     //we remove the transition effect because we want to transition silently
     slider.style.transition = "none";
     currentIndex = slides.length - 2;
-    setPositionByIndex();
-    slider.style.transition = "transform 0.3s ease-out;";
+
+    // setPositionByIndex()
+    currentTranslate = currentIndex * -window.innerWidth;
+    prevTranslate = currentTranslate;
+
+    // setSliderPosition()
+    slider.style.transform = `translateX(${currentTranslate}px)`;
+    // slider.style.transition = "transform 0.3s ease-out";
   } else if (slides[currentIndex].id === "firstClone") {
     slider.style.transition = "none";
     currentIndex = slides.length - currentIndex;
-    setPositionByIndex();
-    // slider.style.transition = "transform 0.5s ease-out;";
+
+    // setPositionByIndex()
+    currentTranslate = currentIndex * -window.innerWidth;
+    prevTranslate = currentTranslate;
+
+    // setSliderPosition()
+    slider.style.transform = `translateX(${currentTranslate}px)`;
+    // slider.style.transition = "transform 0.3s ease-out";
   }
 }
 

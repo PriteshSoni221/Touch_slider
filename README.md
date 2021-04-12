@@ -1,10 +1,13 @@
 # Touch_slider
+
 A Swipe based Carousel. It works on both mobile and desktop and supports any html content.
 
 # How to set up
+
 The set up is fairly easy because The repository has only html, css and JS code. Make sure to keep "img" folder in the same directory as other files.
 
 # Features
+
 - Works for both mobile and desktop. Swipe feature on mobile works as fine as mouse slide on desktop
 - Carousel slide can contain any HTML content. My slide contains header tag and JPG image.
 - Slide is animated
@@ -13,10 +16,12 @@ The set up is fairly easy because The repository has only html, css and JS code.
 - Supports Infinite option. (Using lastClone and firstClone technique)
 
 # Drawbacks
+
 - Changing orientation can sometimes cause slight issues (sometimes image will not be at the center)
-- After a certain action during changing the slides, animation will disrupt and not work properly.
+- Transition between first and last slide is not animated.
 - Please excuse my overuse of commented console.log, it really healps me to understand the flow of my code
 
 # Notes for Scandiweb
+
 - I have left comments inside my code for you about like/dislike button
-- When you first load the webPage, sometimes it will show a little unneccesary animation. - It is a feature not a bug ;) 
+- When you first load the webPage, sometimes it will show a little unneccesary animation. - It is a feature not a bug ;)
