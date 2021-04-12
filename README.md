@@ -14,8 +14,9 @@ The set up is fairly easy because The repository has only html, css and JS code.
 
 # Drawbacks
 - Changing orientation can sometimes cause slight issues (sometimes image will not be at the center)
-- When you first load the webPage, it will show a little unneccesary animation. - It is a feature not a bug ;) 
+- After a certain action during changing the slides, animation will disrupt and not work properly.
 - Please excuse my overuse of commented console.log, it really healps me to understand the flow of my code
 
 # Notes for Scandiweb
 - I have left comments inside my code for you about like/dislike button
+- When you first load the webPage, sometimes it will show a little unneccesary animation. - It is a feature not a bug ;) 
