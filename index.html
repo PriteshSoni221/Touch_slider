@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Touch Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/6dbf960a57.js"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <!-- initially I decided to use like and dislike buttons but you will see in app.js why I decided to remove them. -->
+  <body>
+    <div class="slider-container">
+      <!-- Clone of Last slide/River slide -->
+      <div class="slide" id="lastClone">
+        <h1>Where a River Meets a Sea(4)</h1>
+        <img src="./img/river_sea.jpg" draggable="false" alt="River Img" />
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up" id="btn3-1"></i>
+          <i class="fas fa-thumbs-down" id="btn3-2"></i>
+        </div> -->
+      </div>
+
+      <!-- Red car slide -->
+      <div class="slide">
+        <h1>Red Car On a Bridge(1)</h1>
+        <img src="./img/red_car.jpg" draggable="false" alt="Red Car Img" />
+        <!-- like and dislike icons -->
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up 1" id="btn1-1"></i>
+          <i class="fas fa-thumbs-down 1" id="btn1-2"></i>
+        </div> -->
+      </div>
+
+      <!-- Winter slide -->
+      <div class="slide">
+        <h1>Winter(2)</h1>
+        <img src="./img/winter.jpg" draggable="false" alt="Winter Img" />
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up" id="btn2-1"></i>
+          <i class="fas fa-thumbs-down" id="btn2-2"></i>
+        </div> -->
+      </div>
+
+      <!-- Evening slide -->
+      <div class="slide">
+        <h1>An Evening(3)</h1>
+        <img src="./img/evening.jpg" draggable="false" alt="Evening Img" />
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up" id="btn2-1"></i>
+          <i class="fas fa-thumbs-down" id="btn2-2"></i>
+        </div> -->
+      </div>
+
+      <!-- River slide -->
+      <div class="slide">
+        <h1>Where a River Meets a Sea(4)</h1>
+        <img src="./img/river_sea.jpg" draggable="false" alt="River Img" />
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up" id="btn3-1"></i>
+          <i class="fas fa-thumbs-down" id="btn3-2"></i>
+        </div> -->
+      </div>
+
+      <!-- Clone of first slide/Red car slide -->
+      <div class="slide" id="firstClone">
+        <h1>Red Car On a Bridge(1)</h1>
+        <img src="./img/red_car.jpg" draggable="false" alt="Red Car Img" />
+        <!-- like and dislike icons -->
+        <!-- <div class="buttons">
+          <i class="fas fa-thumbs-up 1" id="btn1-1"></i>
+          <i class="fas fa-thumbs-down 1" id="btn1-2"></i>
+        </div> -->
+      </div>
+    </div>
+    <a class="prevBtn">&#10094;</a>
+    <a class="nextBtn">&#10095;</a>
+
+    <!-- dots -->
+    <div class="dot">
+      <a class="dot_1">1</a>
+      <a class="dot_2">2</a>
+      <a class="dot_3">3</a>
+      <a class="dot_4">4</a>
+    </div>
+
+    <!-- link to our js script file -->
+    <script src="app.js"></script>
+  </body>
+</html>
